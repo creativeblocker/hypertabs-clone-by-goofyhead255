@@ -43,6 +43,6 @@ Press the join button to join the server:
 
 ## Credits
 
-- [B3ATDROP3R](https://github.com/B3ATDROP3R)
+- [B3ATDROP3R](https://github.com/B3ATDROP3R) These people of course are not people I know but rather the owners and creators of this proxy. You should give them all the credit, not goofyhead255.
 - [Caracal.js](https://github.com/caracal-js)
 - [luphoria](https://github.com/luphoria)
