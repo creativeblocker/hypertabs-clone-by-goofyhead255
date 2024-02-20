@@ -34,34 +34,6 @@
   <script src="/uv/uv.config.js"></script>
   <script src="/bare-client.js"></script>
   <script src="/loginsystem.js"></script>
-    if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/uv/sw.js', {
-			scope: __uv$config.prefix,
-			updateViaCache: 'none',
-		});
-    };
-
-    // check custom functions
-    document.addEventListener('keydown', key => {
-      if (key.ctrlKey) {
-        if (document.getElementsByClassName("chrome-tab")[key.key - 1]) {
-          document.getElementsByClassName("chrome-tab")[key.key - 1].click()
-          chromeTabs.setCurrentTab(document.getElementsByClassName("chrome-tab")[key.key - 1])
-          setInfo(document.getElementsByClassName("chrome-tab")[key.key - 1].ifd + 1)
-        }
-      }
-    })
-    document.addEventListener('mousedown', pass => {
-      if (pass.target.parentElement.id != "optionsdrop") hideId("optionsdrop")
-      if (pass.target.parentElement.id != "ctx") hideId("ctx")
-
-      // there HAS to be a better way to do this.
-      if (!pass.target.classList.contains("extenico")) {
-        if (document.querySelector(".extension_menu")) if (!pass.target.parentElement.classList.contains("extension_menu") && !pass.target.parentElement.parentElement.classList.contains("extension_menu") && !pass.target.classList.contains("extension_menu")) document.querySelector(".extension_menu").style.display = "none"
-      }
-    })
-
-  </script>
   <meta name="theme-color" content="#252729" /> 
 </head>
 
